@@ -1,0 +1,199 @@
+* { margin: 0; padding: 0 }
+
+.light {
+    --main-font-color: black;
+    --main-bg-color: white
+}
+
+.dark {
+    --main-font-color: white;
+    --main-bg-color: black
+}
+
+@font-face {
+    font-family: "ogirema";
+    src: url("/ogirema/Ogirema.ttf")
+}
+
+@font-face {
+    font-family: "ogirema-bold";
+    src: url("/ogirema/OgiremaBold.ttf")
+}
+
+@font-face {
+    font-family: "ogirema-italic";
+    src: url("/ogirema/OgiremaItalic.ttf")
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body {
+    font-family: "ogirema", sans-serif;
+    color: var(--main-font-color, black);
+    background: var(--main-bg-color, white);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    transition: all 300ms ease-in-out
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+#footer {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0,0,0,0.5)
+}
+
+#footer .links {
+    height: 50px;
+    width: 50px;
+}
+
+#footer .links a, #footer .links a img {
+    width: 100%;
+    height: 100%
+}
+
+#fb {
+    margin: 7px 7px;
+    height: 36px !important;
+    width: 36px !important
+}
+
+#buyDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px !important;
+    width: 50px !important;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px
+}
+
+#buy {
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#buy p {
+    height: 34px;
+    line-height: 1.2;
+    text-align: center;
+    color: white
+}
+
+#header {
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 2px var(--main-font-color, black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--main-bg-color, white)
+}
+
+#home {
+    line-height: 0.8;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 5px;
+    width: 75px
+}
+
+.heading {
+    text-decoration: none;
+    color: inherit;
+    width: 75px;
+    height: 30px;
+    font-size: 20px;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-bg-color, white)
+}
+
+.heading:hover, .heading:focus {
+    box-shadow: 0 4px 2px -4px var(--main-font-color, black)
+}
+
+#hamburger {display: none}
+.hideThis {display: unset}
+
+@media only screen and (max-width: 600px) {
+    .hideThis {display: none !important}
+
+    #home {
+        padding-bottom: unset;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    #header {
+        top: 0;
+        height: unset;
+        flex-direction: column;
+        box-shadow: unset;
+        border-bottom: 1px solid var(--main-font-color, black)
+    }
+
+    .heading {
+        width: 100%;
+        height: 100%;
+        padding: 5px 0 5px 0;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid var(--main-font-color, black)
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        padding: 4px;
+        background: var(--main-bg-color, white);
+        border: 1px solid var(--main-font-color, black);
+        border-radius: 3px
+    }
+    #hamburger hr {
+        width: 25px;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--main-font-color, black);
+        margin: 0
+    }
+}

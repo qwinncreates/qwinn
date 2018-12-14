@@ -4,6 +4,8 @@ import Facebook from './facebook.png'
 import Instagram from './instagram.png'
 import Twitter from './twitter.png'
 
+console.log(Facebook)
+
 const Footer = () => {
     return (
         <div id="footer">

@@ -12,17 +12,17 @@
 
 @font-face {
     font-family: "ogirema";
-    src: url("/ogirema/Ogirema.ttf")
+    src: url("./ogirema/Ogirema.ttf")
 }
 
 @font-face {
     font-family: "ogirema-bold";
-    src: url("/ogirema/OgiremaBold.ttf")
+    src: url("./ogirema/OgiremaBold.ttf")
 }
 
 @font-face {
     font-family: "ogirema-italic";
-    src: url("/ogirema/OgiremaItalic.ttf")
+    src: url("./ogirema/OgiremaItalic.ttf")
 }
 
 ::-webkit-scrollbar {

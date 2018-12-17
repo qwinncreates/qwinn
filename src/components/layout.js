@@ -26,10 +26,10 @@ render(){
                     </div>
                     <Link id="home" to="/">brittany mcquinn</Link>
                 </div>
-                <Link id="story" className="heading mobile hideThis" to="/story/" onClick={this.toggleHandler}>story</Link>
-                <Link id="lyrics" className="heading mobile hideThis" to="/lyrics/" onClick={this.toggleHandler}>lyrics</Link>
-                <Link id="shows" className="heading mobile hideThis" to="/shows/" onClick={this.toggleHandler}>shows</Link>
-                <Link id="contact" className="heading mobile hideThis" to="/contact/" onClick={this.toggleHandler}>contact</Link>
+                <Link id="story" className="heading mobile hideThis" to="/story" onClick={this.toggleHandler}>story</Link>
+                <Link id="lyrics" className="heading mobile hideThis" to="/lyrics" onClick={this.toggleHandler}>lyrics</Link>
+                <Link id="shows" className="heading mobile hideThis" to="/shows" onClick={this.toggleHandler}>shows</Link>
+                <Link id="contact" className="heading mobile hideThis" to="/contact" onClick={this.toggleHandler}>contact</Link>
                 <DarkMode />
             </div>
 

@@ -12,8 +12,9 @@
     "deploy": "gatsby build"
   },
   "dependencies": {
-    "gatsby": "^2.0.33",
+    "gatsby": "^2.0.68",
     "git": "^0.1.5",
+    "npm": "^6.5.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1"

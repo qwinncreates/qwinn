@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import DarkMode from './darkMode/darkMode'
 import './layout.css'
-import facebook from './footer/facebook.png'
-import instagram from './footer/instagram.png'
-import twitter from './footer/twitter.png'
+import facebook from './facebook.png'
+import instagram from './instagram.png'
+import twitter from './twitter.png'
 
 class Layout extends Component {
 

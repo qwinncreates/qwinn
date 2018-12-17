@@ -5,7 +5,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "prebuild": "rm -rf public/",
+    "prebuild": "rm -rf public/ docs/",
     "build": "gatsby build",
     "postbuild": "cp -r public/ docs/",
     "serve": "gatsby serve",

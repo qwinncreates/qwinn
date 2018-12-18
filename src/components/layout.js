@@ -17,7 +17,7 @@ toggleHandler = () => {
 render(){
     return (
         <React.Fragment>
-            <div id="header">
+            <nav>
                 <div className="heading">
                     <div id="hamburger" onClick={this.toggleHandler}>
                         <hr />
@@ -31,7 +31,7 @@ render(){
                 <Link id="shows" className="heading mobile hideThis" to="/shows" onClick={this.toggleHandler}>shows</Link>
                 <Link id="contact" className="heading mobile hideThis" to="/contact" onClick={this.toggleHandler}>contact</Link>
                 <DarkMode />
-            </div>
+            </nav>
 
             <div id="footer">
                 <div className="links">

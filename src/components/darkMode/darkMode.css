@@ -37,6 +37,14 @@
 @media only screen and (max-width: 600px) {
     .darkMode {
         top: 80%;
-        margin: 5px 0 5px 0
+        height: 50px;
+        border-top: unset !important
+    }
+
+    #dark {
+        width: 100%;
+        box-shadow: 0 1px 1px var(--main-font-color, black);
+        display: flex;
+        justify-content: center;
     }
 }

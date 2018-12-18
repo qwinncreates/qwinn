@@ -56,9 +56,11 @@ class DarkMode extends Component {
 
     render() {
         return (
-            <div className="darkMode mobile hideThis">dark mode
-                <div className={this.state.title} id="toggle-btn" onClick={this.onClickHandler}>
-                    <div className="inner-circle" id="inner-circle"></div>
+            <div id="dark">
+                <div className="darkMode mobile hideThis">dark mode
+                    <div className={this.state.title} id="toggle-btn" onClick={this.onClickHandler}>
+                        <div className="inner-circle" id="inner-circle"></div>
+                    </div>
                 </div>
             </div>
         )

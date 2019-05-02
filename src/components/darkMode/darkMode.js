@@ -7,7 +7,7 @@ class DarkMode extends Component {
     }
 
     componentDidMount(){
-        if(window===undefined){
+        if (typeof window === 'undefined') {
             var title = "toggle-btn"
             this.setState({ title })
         } else {

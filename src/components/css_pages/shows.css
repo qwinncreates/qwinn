@@ -9,9 +9,8 @@
     align-items: center
 }
 
-#showsInfo div {
-    width: 100px;
-}
+#showsInfo div {width: 150px}
+.indent {margin-left: 10px}
 
 #showsInfo div p {
     width: 100%;
@@ -19,6 +18,10 @@
     font-size: 20px;
     text-align: left;
     line-height: 0
+}
+#showsInfo div p a {
+    text-decoration: none;
+    color: inherit
 }
 
 @media only screen and (max-width: 600px){

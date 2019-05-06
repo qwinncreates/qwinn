@@ -6,8 +6,5 @@ module.exports = {
         Brittany works actively on solo projects, artist collaborations, and writing/singing lead for her duo with Daniel 
         James in a band known as Bleum. Visit to read her story, find her music, and get connected with her business contact.`
     },
-    plugins: [
-        `gatsby-plugin-react-helmet`,
-        {resolve: `gatsby-source-filesystem`}
-      ]
+    plugins: [`gatsby-plugin-react-helmet`]
   }

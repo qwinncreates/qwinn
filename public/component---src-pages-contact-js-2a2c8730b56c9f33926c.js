@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{135:function(t,e,n){"use strict";n.r(e);var a=n(0),c=n.n(a),i=(n(146),n(142));e.default=function(){return c.a.createElement("div",{className:"App"},c.a.createElement(i.a,null),c.a.createElement("div",{id:"contactInfo"},c.a.createElement("div",null,c.a.createElement("p",{id:"brittContact"},c.a.createElement("a",{href:"mailto:contact@brittanymcquinn.com",target:"_top"},"contact@brittanymcquinn.com")))))}},146:function(t,e,n){}}]);
+//# sourceMappingURL=component---src-pages-contact-js-2a2c8730b56c9f33926c.js.map

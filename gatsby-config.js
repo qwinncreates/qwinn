@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: '/qwinn',
     siteMetadata: {
       title: `Qwinn`,
       siteUrl: `https://qwinncreates.github.io/qwinn/`,

@@ -57,14 +57,14 @@ class ImageLoader extends React.Component {
               className='artist-name-change-disclaimer'
               style={
                 {
-                  zIndex: '2',
+                  zIndex: '1',
                   backgroundColor: '#fff',
                   color: '#000',
                   borderRadius: '0.5rem',
                   display: 'flex',
                   alignItems: 'center',
                   padding: '10px',
-                  fontSize: '20px'
+                  fontSize: '18px'
                 }
               }
             >

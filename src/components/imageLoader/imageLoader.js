@@ -1,9 +1,10 @@
 import React from 'react'
 import './imageLoader.css'
-import pic from './brittany.jpg'
-import pic_l from './brittany_light.jpg'
-import pic_m from './brittany_mobile.jpg'
-import pic_ml from './brittany_mobile_light.jpg'
+import pic from './qwinn-profile.png'
+import pic_l from './qwinn-profile.png'
+import pic_m from './qwinn-profile.png'
+import pic_ml from './qwinn-profile.png' // TODO: Add different resolutions for this profile photo
+import logo from '../logo.png'
 
 class ImageLoader extends React.Component {
   state={
@@ -44,7 +45,42 @@ class ImageLoader extends React.Component {
     return (
           <div 
             className="background"
-            style={{background: `center / cover no-repeat url(${src})`}}>
+            style={
+              {
+                background: `center / contain no-repeat url(${src})`,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }
+            }>
+            <div
+              className='artist-name-change-disclaimer'
+              style={
+                {
+                  zIndex: '2',
+                  backgroundColor: '#fff',
+                  color: '#000',
+                  borderRadius: '0.5rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  padding: '10px',
+                  fontSize: '20px'
+                }
+              }
+            >
+              Brittany McQuinn is now
+              <img
+                src={logo}
+                alt='qwinn'
+                style={
+                  {
+                    borderRadius: '0.5rem',
+                    width: '100px',
+                    paddingLeft: '5px'
+                  }
+                }
+              />
+            </div>  
           </div>
     )
   }

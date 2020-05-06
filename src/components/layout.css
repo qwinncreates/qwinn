@@ -118,12 +118,15 @@ nav {
 }
 
 #home {
-    line-height: 0.8;
+    display: flex;
+    align-items: center;
+}
+
+#home img {
     text-align: center;
     text-decoration: none;
-    color: inherit;
-    padding-bottom: 5px;
-    width: 75px
+    height: 40px;
+    border-radius: 0.25rem;
 }
 
 .heading {

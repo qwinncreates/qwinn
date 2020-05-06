@@ -5,6 +5,7 @@ import './layout.css'
 import facebook from './facebook.png'
 import instagram from './instagram.png'
 import twitter from './twitter.png'
+import logo from './logo.png'
 
 class Layout extends Component {
 
@@ -24,7 +25,9 @@ render(){
                         <hr />
                         <hr />
                     </div>
-                    <Link id="home" to="/">brittany mcquinn</Link>
+                    <Link id="home" to="/">
+                        <img src={logo} alt='artist logo' />
+                    </Link>
                 </div>
                 <Link id="story" className="heading mobile hideThis" to="/story" onClick={this.toggleHandler}>story</Link>
                 <Link id="lyrics" className="heading mobile hideThis" to="/lyrics" onClick={this.toggleHandler}>lyrics</Link>
